@@ -1,4 +1,21 @@
 //
-body {
-    background-color: red;
+/* VARIABLES */
+@import 'partials/_variables';
+/* RESET */
+@import 'partials/_reset';
+/* COMMON */
+@import 'partials/_common';
+
+header {
+    background-color: #fff;
+    text-align: center;
+    .main-menu {
+        list-style: none;
+        li {
+            display: inline-block;
+            a {
+                color: $main-color-link;
+            }
+        }
+    }
 }
