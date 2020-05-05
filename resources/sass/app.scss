@@ -1,21 +1,12 @@
-//
 /* VARIABLES */
 @import 'partials/_variables';
 /* RESET */
 @import 'partials/_reset';
 /* COMMON */
 @import 'partials/_common';
-
-header {
-    background-color: #fff;
-    text-align: center;
-    .main-menu {
-        list-style: none;
-        li {
-            display: inline-block;
-            a {
-                color: $main-color-link;
-            }
-        }
-    }
-}
+/* HEADER */
+@import 'partials/_header';
+/* MAIN */
+@import 'partials/_main';
+/* FOOTER */
+@import 'partials/_footer';

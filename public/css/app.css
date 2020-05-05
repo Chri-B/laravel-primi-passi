@@ -16,7 +16,10 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
+
+/* HEADER */
 
 header {
   background-color: #fff;
@@ -34,4 +37,45 @@ header .main-menu li {
 header .main-menu li a {
   color: #000;
 }
+
+/* MAIN */
+
+main .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .cards .card {
+  flex-basis: calc(100% / 3 - 40px);
+  position: relative;
+  margin: 20px;
+}
+
+main .cards .card img {
+  display: block;
+  width: 100%;
+}
+
+main .cards .card .card-link {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .cards .card .card-link h3 {
+  padding-bottom: 20px;
+}
+
+main .cards .card:hover .card-link {
+  display: block;
+}
+
+main .cards .card:hover img {
+  transform: scale(1.1);
+}
+
+/* FOOTER */
 
