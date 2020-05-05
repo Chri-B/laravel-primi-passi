@@ -40,24 +40,35 @@ header .main-menu li a {
 
 /* MAIN */
 
-main .cards {
+main section {
+  padding: 20px 0;
+}
+
+main section h2 {
+  padding-left: 20px;
+}
+
+main section .cards {
   display: flex;
   flex-wrap: wrap;
 }
 
-main .cards .card {
+main section .cards .card {
   flex-basis: calc(100% / 3 - 40px);
   position: relative;
   margin: 20px;
 }
 
-main .cards .card img {
+main section .cards .card img {
   display: block;
   width: 100%;
+  transition-duration: 0.5s;
+  border-radius: 10px;
 }
 
-main .cards .card .card-link {
-  display: none;
+main section .cards .card .card-link {
+  opacity: 0;
+  transition: 0.5s linear all;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -65,15 +76,15 @@ main .cards .card .card-link {
   text-align: center;
 }
 
-main .cards .card .card-link h3 {
-  padding-bottom: 20px;
+main section .cards .card .card-link h3 {
+  padding-bottom: 40px;
 }
 
-main .cards .card:hover .card-link {
-  display: block;
+main section .cards .card:hover .card-link {
+  opacity: 1;
 }
 
-main .cards .card:hover img {
+main section .cards .card:hover img {
   transform: scale(1.1);
 }
 
