@@ -12,11 +12,12 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: #002d75;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #002d75;
 }
 
 /* HEADER */
@@ -28,14 +29,22 @@ header {
 
 header .main-menu {
   list-style: none;
+  padding: 20px 0;
 }
 
 header .main-menu li {
   display: inline-block;
+  font-size: 20px;
+  padding: 0 10px;
 }
 
 header .main-menu li a {
   color: #000;
+  font-weight: bold;
+}
+
+header .main-menu li a:hover {
+  color: #002d75;
 }
 
 /* MAIN */
@@ -46,6 +55,7 @@ main section {
 
 main section h2 {
   padding-left: 20px;
+  color: #002d75;
 }
 
 main section .cards {
@@ -78,6 +88,10 @@ main section .cards .card .card-link {
 
 main section .cards .card .card-link h3 {
   padding-bottom: 40px;
+}
+
+main section .cards .card .card-link h3 a {
+  color: #000;
 }
 
 main section .cards .card:hover .card-link {

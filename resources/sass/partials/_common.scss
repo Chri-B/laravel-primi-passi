@@ -1,8 +1,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    color: $text-color-first;
 }
 
 a {
     text-decoration: none;
-    color: $main-color-link;
+    color: $text-color-first;
 }

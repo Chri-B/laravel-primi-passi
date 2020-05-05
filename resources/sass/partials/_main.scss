@@ -3,6 +3,7 @@ main {
         padding: 20px 0;
         h2 {
             padding-left: 20px;
+            color: $text-color-first;
         }
         .cards {
             display: flex;
@@ -27,6 +28,10 @@ main {
                     text-align: center;
                     h3 {
                         padding-bottom: 40px;
+
+                        a {
+                            color: $link-color;
+                        }
                     }
                 }
                 &:hover {
