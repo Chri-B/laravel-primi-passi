@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::get('/', function () {
+    return view('index');
+})->name('index');
+
 Route::get('/home', function() {
     return view('home');
 })->name('home');
