@@ -1,5 +1,9 @@
 /* VARIABLES */
 
+/* MIXINS */
+
+/* mixin per media query */
+
 /* RESET */
 
 * {
@@ -20,37 +24,78 @@ a {
   color: #002d75;
 }
 
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
 /* HEADER */
 
 header {
+  padding-top: 20px;
   background-color: #fff;
   text-align: center;
 }
 
-header .main-menu {
-  list-style: none;
+header .header-nav i {
+  font-size: 20px;
   padding: 20px 0;
 }
 
-header .main-menu li {
-  display: inline-block;
+header .header-nav i:hover {
+  cursor: pointer;
+}
+
+header .header-nav .main-menu {
+  display: none;
+  padding-top: 40px;
+  line-height: 60px;
+}
+
+header .header-nav .main-menu li {
   font-size: 20px;
   padding: 0 10px;
 }
 
-header .main-menu li a {
+header .header-nav .main-menu li a {
   color: #000;
   font-weight: bold;
 }
 
-header .main-menu li a:hover {
+header .header-nav .main-menu li a:hover {
   color: #002d75;
+}
+
+header .header-nav .main-menu .active {
+  background-color: #93d7e8;
+}
+
+@media screen and (min-width: 992px) {
+  header .header-nav .main-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  header .header-nav i {
+    display: none;
+  }
 }
 
 /* MAIN */
 
-main section {
-  padding: 20px 0;
+main {
+  background-color: #ececec;
 }
 
 main section h2 {
@@ -64,7 +109,7 @@ main section .cards {
 }
 
 main section .cards .card {
-  flex-basis: calc(100% / 3 - 40px);
+  flex-basis: calc(100% - 40px);
   position: relative;
   margin: 20px;
 }
@@ -99,8 +144,54 @@ main section .cards .card:hover .card-link {
 }
 
 main section .cards .card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.03);
+}
+
+@media screen and (min-width: 768px) {
+  main section .cards .card {
+    flex-basis: calc(100% / 2 - 40px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main section .cards .card {
+    flex-basis: calc(100% / 3 - 40px);
+  }
 }
 
 /* FOOTER */
+
+footer .container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+footer .container h4 {
+  color: #8f8f95;
+  padding-top: 10px;
+}
+
+footer .container ul li {
+  font-size: 12px;
+  color: #8f8f95;
+}
+
+footer .container .site-map li {
+  line-height: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+footer .sub-footer {
+  background-image: url("https://www.lamolisana.it/wp-content/uploads/2017/10/footer-montagne-bottom.jpg");
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  height: 150px;
+}
 

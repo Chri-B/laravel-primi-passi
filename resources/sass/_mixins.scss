@@ -1,0 +1,13 @@
+/* mixin per media query */
+@mixin media($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin clearfix() {
+    content: "";
+    display: table;
+    clear: both;
+
+}

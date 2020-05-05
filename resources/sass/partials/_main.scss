@@ -1,6 +1,6 @@
 main {
+    background-color: #ececec;
     section {
-        padding: 20px 0;
         h2 {
             padding-left: 20px;
             color: $text-color-first;
@@ -9,7 +9,7 @@ main {
             display: flex;
             flex-wrap: wrap;
             .card {
-                flex-basis: calc(100% / 3 - 40px);
+                flex-basis: calc(100% - 40px);
                 position: relative;
                 margin: 20px;
                 img {
@@ -39,8 +39,18 @@ main {
                         opacity: 1;
                     }
                     img {
-                        transform: scale(1.1);
+                        transform: scale(1.03);
                     }
+                }
+            }
+            @include media($smartphone) {
+                .card {
+                    flex-basis: calc(100% / 2 - 40px);
+                }
+            }
+            @include media($tablet) {
+                .card {
+                    flex-basis: calc(100% / 3 - 40px);
                 }
             }
         }

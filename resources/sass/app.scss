@@ -1,9 +1,11 @@
 /* VARIABLES */
-@import 'partials/_variables';
+@import '_variables';
+/* MIXINS */
+@import '_mixins';
 /* RESET */
-@import 'partials/_reset';
+@import '_reset';
 /* COMMON */
-@import 'partials/_common';
+@import '_common';
 /* HEADER */
 @import 'partials/_header';
 /* MAIN */
