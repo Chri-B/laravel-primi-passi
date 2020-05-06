@@ -24,3 +24,11 @@ Route::get('/', function () {
 Route::get('/prodotti', function() {
     return view('prodotti');
 })->name('prodotti');
+
+Route::get('/contatti', function() {
+    return view('contatti');
+})->name('contatti');
+
+Route::get('admin/products', function() {
+    return view('admin.prodotti');
+})->name('admin.prodotti');
