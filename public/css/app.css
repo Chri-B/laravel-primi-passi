@@ -172,7 +172,7 @@ footer .container h4 {
   padding-top: 10px;
 }
 
-footer .container ul li {
+footer .container ul li a {
   font-size: 12px;
   color: #8f8f95;
 }

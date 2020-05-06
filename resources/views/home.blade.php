@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('titolo')
-    La Molisana - HOME
+    HOME
 @endsection
 
 @section('css')
@@ -9,7 +9,7 @@
 
 @section('mainContent')
     <section>
-        Index
+        <h2>INDEX</h2>
     </section>
 @endsection
 
