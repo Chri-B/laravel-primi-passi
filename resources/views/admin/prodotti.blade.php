@@ -14,11 +14,11 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (config('products') as $product)
+            @foreach (config('data') as $product)
                 <tr>
-                    <td>{!!$product['titolo']!!}</td>
+                    <td>{{$product['titolo']}}</td>
                     <td>{!!$product['descrizione']!!}</td>
-                    <td>{!!$product['tipo']!!}</td>
+                    <td>{{$product['tipo']}}</td>
                 </tr>
             @endforeach
         </tbody>
