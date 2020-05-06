@@ -107,6 +107,12 @@ main {
   background-color: #ececec;
 }
 
+main .container-product {
+  background-image: url(/images/fondo-pag-speciali.jpg?00a917a9de0c49fcedc00f533a6f0b44);
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
 main section h2 {
   padding-left: 20px;
   color: #002d75;

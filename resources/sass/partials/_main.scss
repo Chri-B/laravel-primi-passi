@@ -1,5 +1,10 @@
 main {
     background-color: #ececec;
+    .container-product {
+        background-image: url('../../img/fondo-pag-speciali.jpg');
+        background-size: contain;
+        background-repeat: repeat-y;
+    }
     section {
         h2 {
             padding-left: 20px;
