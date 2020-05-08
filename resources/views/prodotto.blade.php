@@ -25,7 +25,7 @@
                     <p>Tipo di pasta: <span class="font-weight-bold">{{$prodotto['tipo']}}</span></p>
                     <p>Cottura: <span class="font-weight-bold">{{$prodotto['cottura']}}</span></p>
                     <p>Confezione: <span class="font-weight-bold">{{$prodotto['peso']}}</span></p>
-                    <p class="text-justify font-italic">{{$prodotto['descrizione']}}</p>
+                    <p class="text-justify font-italic">{!!$prodotto['descrizione']!!}</p>
                 </div>
             </div>
         </div>
